@@ -1,6 +1,6 @@
 # Android 固件分区提取与 KernelSU 自动补丁工具
 
-这是一个基于 GitHub Actions 的自动化工具，旨在帮助用户从 Android 固件（payload.bin）中提取指定分区，并可选地使用 KernelSU 进行 LKM 模式的 Root 补丁。
+这是一个基于 GitHub Actions 的自动化工具，旨在帮助用户从 Android 固件（payload.bin）中提取指定分区，并可选地使用最新版本的 KernelSU 进行 LKM 模式的 Root 补丁。
 
 ## 🛠️ 使用方法
 
@@ -13,9 +13,6 @@
    - **固件 ZIP 下载地址**：固件的直接下载链接。
    - **需要提取的分区**：默认为 `boot,init_boot`，可根据需要修改。
    - **是否使用 KernelSU 进行补丁**：勾选即开启补丁功能。
-   - **Magisk 版本**：用于提取 `magiskboot` 工具（如 `30.6`），需与 [Magisk](https://github.com/topjohnwu/Magisk/releases) 官方 Release 的 版本一致。
-   - **KernelSU 版本**：指定 KSU 版本（如 `3.0.0`）。
-   - **KMI 版本**：指定内核版本（如 `android15-6.6`），需与 [KernelSU](https://github.com/tiann/KernelSU/releases) 官方 Release 的 `.ko` 文件名匹配。
    - **需要补丁的目标分区**：通常为 `init_boot` 或 `boot`。
    - **上传选项**：选择上传到 Releases 或 Artifacts。
 
