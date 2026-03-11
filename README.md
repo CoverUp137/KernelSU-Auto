@@ -19,7 +19,8 @@
 
 ## 📂 文件说明
 
-- `.github/workflows/extract-partitions-Kernelsu.yml`: 核心工作流配置文件。
+- `.github/workflows/extract-partitions-Kernelsu.yml`: 核心工作流配置文件
+- `.github/workflows/cleanup.yml`: 清理旧工作文件
 - `autoksu.sh`: linux系统本地一键KernelSu补丁
 `
 
