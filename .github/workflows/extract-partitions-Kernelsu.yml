@@ -100,7 +100,7 @@ jobs:
             echo "正在从 KernelSU APK 提取 magiskboot..."
             # 提取 magiskboot，根据架构选择路径
             # 修正 APK 文件名格式，使用下划线并包含 release 字样
-            curl -L -o KernelSU.apk "https://github.com/tiann/KernelSU/releases/download/${KSU_VER}/KernelSU_${KSU_VER}-release.apk"
+            curl -L -o KernelSU.apk "https://github.com/tiann/KernelSU/releases/download/${KSU_VER}/KernelSU_${KSU_VER}*-release.apk"
             if [ "$ARCH" = "x86_64" ]; then
               unzip -q KernelSU.apk "lib/x86_64/libmagiskboot.so" -d .
               mv lib/x86_64/libmagiskboot.so magiskboot
